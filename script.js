@@ -4,7 +4,7 @@ var password = document.getElementById("password");
 //write code to generate the password
 function generatePassword() {
     //array that contains all of the symbols that I need.
-  var chars = ["!@#$%^&*()abcdefghijklmnopqrstuvwxuz1234567890ABCDEFGHIJKLMNOPQRSTUVQXYZ"];
+  var chars = "!@#$%^&*()abcdefghijklmnopqrstuvwxuz1234567890ABCDEFGHIJKLMNOPQRSTUVQXYZ".split("");
   
   var passwordLength = 15;
   
@@ -12,7 +12,8 @@ function generatePassword() {
   
 
   for (var i = 0; i <= passwordLength; i++){
-  password += chars.charAt(Math.floor(Math.random() * password.length + 1));
+    var random
+  password += chars.charAt(Math.floor(Math.random() * password.Length + 1));
     
   };
 
